@@ -1,0 +1,434 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Mulish', sans-serif;
+}
+
+html body{
+	overflow-x: hidden;
+}
+
+.header{
+	width: 100%;
+	height: auto;
+	background-color: #50d1c0;
+}
+
+p{
+    color: #2C3E50;
+    font-size:20px;
+}
+
+h2{
+	font-size:1.4rem;
+	margin: 20px 0 15px 0;
+	font-weight: bold;
+	line-height: 1.1;
+	letter-spacing: 4px;
+}
+
+i{
+	color: #2fccd0;
+}
+
+i:hover{
+	color: cyan;
+}
+
+.img-div img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 20px 0;
+}
+
+.name-div{
+	margin: 20px 0;
+}
+
+.name-div h2{
+	font-weight: bold;
+	font-style: italic;
+	color: #aaff00;
+	font-size:24px;
+}
+
+.name-div h2:hover{
+	color: #ffff00;
+}
+
+.nav-item{
+	padding: 0 20px;
+}
+
+.nav-item a{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nav-item a:hover{
+	transform: translateY(-2px);
+	color: #8533ff;
+}
+
+.navbar{
+	background-color: #ff9999;
+}
+
+.navbar-toggler{
+	border-color: #fff;
+}
+
+
+@media(max-width: 740px){
+
+	.img-div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
+
+/*<!-- ===========Closed Header Section=============== -->
+
+	<!-- =============Open Address section============= -->*/
+
+.address-section{
+	position: relative;
+	width: 100%;
+}
+
+.address-section:before{
+	content: " ";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background:linear-gradient(340deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+
+.map{
+	width: 100%;
+	height: 50vh;
+}
+
+.ads{
+	width: auto;
+	height: auto;
+	padding: 10px;
+}
+
+.ads:hover{
+	transform: translateY(-10px);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+
+.phone-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media(max-width: 650px){
+	.eml p{
+		font-size: 17px; 
+	}
+}
+
+
+	/*<!-- =============Closed Address section============= -->*/
+
+/*<!-- ===================Open Academic Qualififation==================	*/
+
+.academic{
+	width: 100%;
+	height: auto;
+	padding: 40px 0px;
+}
+
+.academic-dev{
+	text-align: center;
+	width: 30%;
+	margin: 30px 0px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+
+.academic-dev-center{
+	text-align: center;
+	width: 30%;
+	margin: 30px 0px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+	transform: translateY(-20px);
+}
+
+.academic-dev p{
+	font-size:15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.academic-dev-center p{
+	font-size:15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.academic-dev:hover{
+	transform: translateY(-20px);
+	background-color: #ffe6e6;
+}
+
+.academic-dev-center:hover{
+	transform: translateY(-30px);
+	background-color: #ffe6e6;
+}
+
+@media(max-width: 650px){
+
+	.academic-dev-center{
+	transform: translateY(0px);
+}
+
+}
+
+/*===================Closed Academic Qualififation================== -->	*/
+
+/*===================Open Training & Experience=================*/
+
+.training-exp{
+	width: 100%;
+	height: 80vh;
+	padding: 50px 0;
+	position: relative;
+}
+
+.exp-heading{
+	margin-bottom: 50px;
+}
+
+.training-exp:before{
+	content: " ";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background:linear-gradient(14deg,  #000080 50%, #fff 0%);
+    z-index: -1;
+}    
+
+.training{
+	width: 50%;
+	height: auto;
+	background-color: #FF9933;
+	padding: 5px 20px;
+	border-radius: 100px;
+	text-align: center;
+}
+
+.experience{
+	float: right;
+	width: 50%;
+	height: auto;
+	background-color: #138808;
+	padding: 5px 30px;
+	border-radius: 100px;
+	text-align: center;
+}
+
+.training:hover{
+	transform: translateX(100%);
+}
+
+.experience:hover{
+	transform: translateX(-100%);
+}
+
+@media(max-width: 740px){
+
+.training-exp{
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+	position: relative;
+}
+
+.training{
+	width: 100%;
+	margin: 10px 0;
+}
+
+.experience{
+	width: 100%;
+	margin: 10px 0;
+}
+
+.training:hover{
+	transform: translateX(20px);
+}
+
+.experience:hover{
+	transform: translateX(-20px);
+}
+
+}
+
+/*===================Closed Training & Experience=================*/
+
+/*====================Open Technical Skill=====================*/
+
+.skill{
+	width: 100%;
+	height: auto;
+	margin: 50px 0;
+	position: relative;
+}
+
+.service-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media(max-width: 760px){
+
+	.skill-headind{
+		margin-top: 350px;
+	}
+
+}
+
+
+/*====================Closed Technical Skill=====================*/
+
+/*================Open Computer Skill======================*/
+
+.computer-skill{
+	width: 100%;
+	height: auto;
+	background-color: #ecffe6;
+	padding: 50px 0;
+}
+
+.com-skill-icon{
+	text-align: center;
+}
+
+.computer-skill-logo{
+	height: 100px;
+	width: auto;
+}
+
+.com-skill-icon{
+	padding: 10px 0;
+}
+
+.com-skill-icon:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+
+/*================Closed Computer Skill======================*/
+
+/*==================Open Personal Detail==================*/
+
+.prsnl-detail{
+	width: 100%;
+	height: auto;
+	padding: 40px 0;
+}
+
+.language td{
+    padding-left: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.language td input{
+    margin-left: 3px;
+}
+
+.personal{
+	background-color: #cccc00;
+	padding: 20px;
+	border-radius: 50px;
+	color: #fff;
+}
+
+.personal:hover{
+	color: #000000;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+}
+
+/*==================Closed Personal Detail================*/
+
+/*==============Open Project==============*/
+
+.project{
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	background-color: #ffe6ff;
+	margin: 60px 0;
+}
+
+.project-div{
+	padding: 0 20px;
+	line-height: 40px;
+	letter-spacing: 2px;
+}
+
+.project-div ul li{
+	font-size:20px;
+	margin-left: 20px;
+}
+
+.project-div ul li label{
+	font-weight: bold;
+	font-size: 17px;
+}
+
+/*==============Closed Project==============*/
+
+/*====================Open Footer===================*/
+
+.footer{
+	width: 100%;
+	height: auto;
+	background-color: #CCD1D1 ;
+	padding: 50px 0;
+}
+
+.footer-menu li a{
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+}
+
+.footer-menu li {
+	list-style-type: none;
+}
+
+.footer-menu li a:hover{
+	text-decoration: none;
+	color: #FADBD8;
+}
+
+.footer-icon{
+	margin: 20px;
+}
+
+.copy{
+	color: #000000;
+}
+
+/*===================Closed Footer==================*/
